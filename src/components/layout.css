@@ -9,9 +9,9 @@ html {
   background-position: center center;
   background-size: 170% 170%;
 }
-li {
+/* li {
   font-size: 2em;
-}
+} */
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -52,6 +52,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #333;
+  text-decoration: none;
 }
 a:active,
 a:hover {
