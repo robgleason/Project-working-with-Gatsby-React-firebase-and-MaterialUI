@@ -1,14 +1,17 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Image from "../components/image"
+import SEO from "../components/seo"
 
 const Header = ({ siteTitle }) => (
-  <header
+  <div
     style={{
-      background: `MidnightBlue`,
-      marginBottom: `1.45rem`,
+      background: `#333`,
+      marginBottom: `0`,
     }}
   >
+  
     <div
       style={{
         margin: `0 auto`,
@@ -28,7 +31,8 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-  </header>
+    </div>
+  
 )
 
 Header.propTypes = {

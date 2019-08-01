@@ -1,16 +1,16 @@
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   text-align: center;
   height: 100vh;
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   background: url("https://cmsassets.mybluprint.com/dims4/default/99badeb/2147483647/strip/true/crop/5196x3103+0+361/resize/2880x1720!/quality/90/?url=https%3A%2F%2Fcmsassets.mybluprint.com%2F9b%2F07%2Fb854b5824b1797c1259d0ab1b47e%2Fblank-square-canvas-on-wooden-easel.jpg");
   /* ChamilleWhite/Getty Images/iStockphoto */
   background-position: center center;
   background-size: 170% 170%;
+}
+li {
+  font-size: 2em;
 }
 body {
   margin: 0;
