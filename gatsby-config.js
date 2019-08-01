@@ -5,6 +5,39 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+
+    
+
+  
+        {
+          resolve: 'gatsby-source-firestore',
+          options: {
+            credential: require("./first-project-561a4-firebase-adminsdk-hptxr-871786bcda.json"),
+            types: [
+              {
+                type: 'Book',
+                collection: 'books',
+                map: doc => ({
+                  title: doc.title,
+                  isbn: doc.isbn,
+                  author___NODE: doc.author.id,
+                }),
+              },
+              {
+                type: 'Author',
+                collection: 'authors',
+                map: doc => ({
+                  name: doc.name,
+                  country: doc.country,
+                  books___NODE: doc.books.map(book => book.id),
+                }),
+              },
+            ],
+          },
+        },
+    
+
+    
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
